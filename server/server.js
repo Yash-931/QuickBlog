@@ -11,8 +11,9 @@ await connectDB()
 
 // Middlewares
 app.use(cors({
-  origin: 'https://quick-blog-eta-opal.vercel.app' // Or '*' to allow all origins
+  origin: '*'
 }));
+
 app.use(express.json())
 
 // Routes
